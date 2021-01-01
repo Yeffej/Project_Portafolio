@@ -66,9 +66,13 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -1px;
     color: White;
     margin: 0;
+}
+.Hero h1 span {
+    display: block;
     width: 0;
     white-space: nowrap;
     overflow: hidden;
+    will-change: width;
 }
 .Hero strong {
     color: #026fff;
@@ -307,11 +311,9 @@ li {
     .HeroImage {
         position: absolute;
         z-index: 1; 
-        left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-        width: 100%;
     }
     .video {
         max-width: 100%;
@@ -443,6 +445,10 @@ li {
     
 }
 @media screen and (max-width: 480px) {
+    .HeroImage{
+        width: 100%;
+        left: 0;
+    }
     .buger-button{
         width: 30px;
         height: 30px;
