@@ -173,6 +173,7 @@ li {
 }
 .footer img { 
     vertical-align: middle;
+    width: auto;
 }
 .events {
     width: 48%;
@@ -191,7 +192,6 @@ li {
 }
 .events img {
     width: 100%;
-    height: auto;
     object-fit: cover;
 }
 .Events-experience {
@@ -228,7 +228,7 @@ li {
     border-radius: 3px;
     padding: 7px 20px 7px 30px;
     margin: 5px;
-    background-image: url("../image P/email-icon\ 2.png");
+    background-image: url("https://i.imgur.com/MK35bnP.png");
     background-size: 20px;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -304,7 +304,7 @@ li {
         overflow: hidden;
         padding: 2em;
     }
-    h1 {
+    .Hero h1 {
         z-index: 2;
         text-shadow: .1em .1em .1em gray;
     }
@@ -313,7 +313,8 @@ li {
         z-index: 1; 
         right: 0;
         top: 0;
-        bottom: 0;
+        bottom: 0; 
+        height: 100%;         
     }
     .video {
         max-width: 100%;
@@ -442,6 +443,9 @@ li {
         width: 100%;
         height: 200px;
     }
+    .Hero {
+        padding-left: 0;
+    }
     
 }
 @media screen and (max-width: 480px) {
@@ -465,22 +469,24 @@ li {
         margin: -2em .5em .5em;
         padding: 1em;
     }
+    .footer p {
+        margin: 0.3em;
+    }
     .footer img {
-        margin: 1em auto;
-        display: block;
+        margin: .3em auto;
     }
     .footer {
         justify-content: center;
     }
     .footer-design {
-    margin: 0 1em 1em;
+    margin: 0 1em .5em;
     }
     .footer-design p {
-        margin: inherit;
+        margin: .3em;
         text-align: center;
     }
-    h1 { 
-        font-size: 2em
+    .Hero h1 { 
+        font-size: 1.7em
 
     }
     .Portfolio h2 {
@@ -507,9 +513,12 @@ li {
     .social-link {
         margin: 0 .3em
     }
-    h1 { 
-        font-size: 1.5em;
+    .Hero h1 { 
+        font-size: 1.38em;
         text-align: center;
         
+    }
+    .Hero h1 span {
+        text-align: start;
     }
 }

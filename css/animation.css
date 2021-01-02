@@ -1,0 +1,34 @@
+.link {
+    transition: 1s;
+    -webkit-transition: 1s;
+    will-change: background-color, font-weight, font-size;
+}
+.form-contacts button {
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.description-url {
+    transition: 1s;
+    -webkit-transition: 1s;
+    will-change: background-color, color, transform;
+}
+
+.link:hover {
+    background-color: white;
+    color: #1d252c;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.description-url:hover {
+    background-color: #213cff;
+    color: white;
+}
+.description-url:active {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+}
+.form-contacts button:hover {
+    color: #0523CA;
+    background-color: white;
+}

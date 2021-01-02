@@ -57,14 +57,12 @@ function ToPauseAndReverse(writter, aniTimeStop) {
             writter.pause()
             writter.reverse()
             isItReverse = true
-            console.log("POPO")
             setTimeout(() =>{
                 writter.finish()
             }, aniTimeStop);
             isItPause = true
             clearInterval(theInterval)
         } 
-        console.log("PPL")
     }, 50)
 }
 
@@ -75,19 +73,16 @@ const ActionLine = writter => {
     }else {
         switch(writter){
             case writter_line1:
-                console.log("Here")
                 writter_line2.play()
                 ToPauseAndReverse(writter_line2, 2050)
                 writter_line2.addEventListener("finish", ()=> ActionLine(writter_line2))
                 writter_line1.removeEventListener("finish", () => ActionLine(writter_line1))
                 break;
             case writter_line2:
-                console.log("ok")
                 writter_line3.play()
                 writter_line2.removeEventListener("finish", ()=> ActionLine(writter_line2))
                 break;
             default:
-                console.log("Okay")
                 return;
         }
     }   
