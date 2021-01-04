@@ -56,6 +56,24 @@ Valores*/
      font-family: 'Source Sans Pro', sans-serif;
      margin: 0; 
  }
+article {
+    box-shadow: 1px 1px 1px 1px #1d1d1d;
+}
+
+h2 {
+    position: relative;
+}
+h2::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #026fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    top: calc(50% - 5px);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
 }
@@ -78,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #026fff;
 }
 .project {
-    border: 1px solid;
     border-radius: 10px;
     display: flex;
     background-color: white;
@@ -147,6 +164,7 @@ header {
     color: #056fff;
     margin: 0;
     padding: 20px;
+    border-left: 8px solid #026fff;
 } 
 
 header figure {
@@ -213,6 +231,11 @@ li {
 }
 .events-H2-title {
     margin-left: 20px;
+    border-left: 8px solid black;
+    padding-left: 1em;
+}
+.events-H2-title::before {
+    background-color: black;
 }
 .contacts {
     background-color: #0523CA;
